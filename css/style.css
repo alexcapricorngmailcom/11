@@ -62,4 +62,84 @@ html {
   src: url("../fonts/HelveticaNeue Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+}
+html {
+  font-family: HelveticaNeue;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.container {
+  width: 100vw;
+  max-width: 74vw;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.nav-logo:focus {
+  color: #2095bc;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list li + li {
+  margin-left: 1.5em;
+}
+
+.hero {
+  background-color: #000000;
+  padding-top: 14em;
+  padding-bottom: 8.7em;
+}
+.hero-title {
+  max-width: 50%;
+  font-size: 3.2em;
+  line-height: 1;
+}
+.hero-text {
+  max-width: 50%;
+  margin-top: 2em;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.hero-buttons {
+  display: flex;
+  margin-top: 3em;
+}
+.hero-buttons li + li {
+  margin-left: 0.7em;
+}
+.hero-buttons-btn {
+  min-width: 11.7em;
+  padding: 1.1em 2em;
+}
+.hero-buttons-btn:hover, .hero-buttons-btn:focus {
+  background-color: #2095bc;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #959595;
+  border-radius: 6px;
 }/*# sourceMappingURL=style.css.map */

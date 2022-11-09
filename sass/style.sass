@@ -2,6 +2,82 @@
 @import "_defaults"
 @import "_fonts"
 
+html
+    font-family: HelveticaNeue
+    font-size: 15px
+    font-weight: 400
+    font-style: normal
+    background-color: #ffffff
+    color: #ffffff
+
+.container
+    width: 100vw
+    max-width: 74vw
+    margin: 0 auto
+    padding: 0 10px
+
+.header 
+    position: absolute
+    top: 3em
+    left: 0
+    width: 100%
+
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+    &-logo
+        font-size: 1.4em
+        font-weight: 700
+        &:focus
+            color: $accentColor
+    &-list
+        display: flex
+        li + li
+            margin-left: 1.5em
+
+.hero
+    background-color: #000000
+    padding: 
+        top: 14em
+        bottom: 8.7em
+    &-title
+        max-width: 50%
+        font-size: 3.2em
+        line-height: 1
+    &-text
+        max-width: 50%
+        margin-top: 2em
+        font-size: 1.2em
+        line-height: 2
+
+.hero-buttons
+    display: flex
+    margin-top: 3em
+    li + li
+        margin-left: 0.7em
+    &-btn
+        min-width: 11.7em
+        padding: 1.1em 2em
+        &:hover, &:focus 
+            background-color: $accentColor 
+
+
+.btn
+    display: inline-block
+    text-align: center
+    border: 1px solid #959595
+    border-radius: 6px
+
+
+   
+
+        
+
+
+
+
 
 
 @import "_media.sass"
