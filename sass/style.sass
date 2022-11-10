@@ -12,7 +12,7 @@ html
 
 .container
     width: 100vw
-    max-width: 74vw
+    max-width: 67em
     margin: 0 auto
     padding: 0 10px
 
@@ -108,9 +108,10 @@ section:nth-child(odd)
         color: $mainSubtitleColor
     &-list
         display: flex
+        flex-wrap: wrap
         margin: 3.3em -0.7em 0 -0.7em
     &-list > li
-        width: 25%
+        width: calc(100% / 4)
         padding: 0.7em
     &-card
         padding: 1.8em
@@ -140,10 +141,44 @@ section:nth-child(odd)
     &-title
         font-size: 2em
         color: $mainTitleColor
-
-
-        
-
+    &-list
+        display: flex
+        justify-content: space-between
+        margin-top: 4em
+        border: 6px
+        color: #656b74
+        li + li
+            margin-left: 3.7em
+    &-card
+        &-text
+            padding: 1.4em
+            max-width: 18.6em
+            font-size: 0.9em
+            line-height: 1.4
+            text-align: left
+            background-color: #ffffff
+        &-person
+            display: flex
+            align-items: center
+            margin-top: 1.7em
+        &-container
+            width: 3.3em
+            height: 3.3em
+            border-radius: 50%
+            background-color: #d2dce0
+            overflow: hidden
+            &-img
+                width: 3.3em
+                height: 3.3em 
+        &-profession
+            margin-left: 0.7em
+            font-size: 0.8em
+            color: #6e747c
+        &-name
+            color: #3ba06f
+            &:hover, &:focus 
+               color: $accentColor 
+               text-decoration: underline
 
 
 
