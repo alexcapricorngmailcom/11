@@ -289,7 +289,7 @@ section:nth-child(odd) {
   height: 1.1em;
   border: 2px solid #2095bc;
   border-radius: 50%;
-  margin-left: 0.1em;
+  margin-left: 0.2em;
 }
 .testimonials-label:first-child {
   margin-left: 0;
@@ -312,6 +312,7 @@ section:nth-child(odd) {
 .trial-text {
   margin-top: 2em;
   font-size: 1.4em;
+  font-weight: 300;
   color: #95cde0;
 }
 .trial-btn {
