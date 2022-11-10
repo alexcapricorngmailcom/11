@@ -151,6 +151,7 @@ section:nth-child(odd) {
 .hero-buttons-btn {
   min-width: 11.7em;
   padding: 1.1em 2em;
+  font-size: 1.1em;
 }
 .hero-buttons-btn:hover, .hero-buttons-btn:focus {
   background-color: #2095bc;
@@ -236,7 +237,6 @@ section:nth-child(odd) {
   display: flex;
   justify-content: space-between;
   margin-top: 4em;
-  border: 6px;
   color: #656b74;
 }
 .testimonials-list li + li {
@@ -244,10 +244,12 @@ section:nth-child(odd) {
 }
 .testimonials-card-text {
   padding: 1.4em;
-  max-width: 18.6em;
+  max-width: 20em;
   font-size: 0.9em;
   line-height: 1.4;
   text-align: left;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
 .testimonials-card-person {
@@ -277,4 +279,49 @@ section:nth-child(odd) {
 .testimonials-card-name:hover, .testimonials-card-name:focus {
   color: #2095bc;
   text-decoration: underline;
+}
+.testimonials-radio {
+  margin-top: 3em;
+}
+.testimonials-label {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  border: 2px solid #2095bc;
+  border-radius: 50%;
+  margin-left: 0.1em;
+}
+.testimonials-label:first-child {
+  margin-left: 0;
+}
+.testimonials-input {
+  display: none;
+}
+.testimonials-input:checked + label {
+  background-color: #2095bc;
+}
+
+.trial {
+  padding: 5.8em 0 5.3em 0;
+  text-align: center;
+  background-color: #2095bc;
+}
+.trial-title {
+  font-size: 2.4em;
+}
+.trial-text {
+  margin-top: 2em;
+  font-size: 1.4em;
+  color: #95cde0;
+}
+.trial-btn {
+  min-width: 11.7em;
+  margin-top: 2em;
+  padding: 1.1em 2em;
+  font-size: 1.1em;
+  border-color: #ffffff;
+}
+.trial-btn:hover, .trial-btn:focus {
+  background-color: #ffffff;
+  color: #2095bc;
 }/*# sourceMappingURL=style.css.map */
