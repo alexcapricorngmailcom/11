@@ -79,6 +79,22 @@ html {
   padding: 0 10px;
 }
 
+.btn {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #959595;
+  border-radius: 6px;
+}
+
+section:nth-child(even) {
+  background-color: #f7f8fa;
+  border-bottom: 1px solid #ebedf0;
+}
+
+section:nth-child(odd) {
+  border-bottom: 1px solid #ebedf0;
+}
+
 .header {
   position: absolute;
   top: 3em;
@@ -95,7 +111,7 @@ html {
   font-size: 1.4em;
   font-weight: 700;
 }
-.nav-logo:focus {
+.nav-logo:hover, .nav-logo:focus {
   color: #2095bc;
 }
 .nav-list {
@@ -103,6 +119,9 @@ html {
 }
 .nav-list li + li {
   margin-left: 1.5em;
+}
+.nav-list-link:hover, .nav-list-link:focus {
+  color: #2095bc;
 }
 
 .hero {
@@ -137,9 +156,78 @@ html {
   background-color: #2095bc;
 }
 
-.btn {
-  display: inline-block;
+.promotion > .container {
+  display: flex;
+  align-items: center;
+}
+
+.promotion-img {
+  margin: -5em 0 3.3em 0;
+}
+.promotion-list-title {
+  font-size: 1.6em;
+  line-height: 1.25;
+  color: #3e434a;
+}
+.promotion-list-text {
+  margin-top: 1.7em;
+  line-height: 1.6;
+  color: #7e848e;
+}
+
+.features {
+  padding: 5.3em 0 5.7em 0;
   text-align: center;
-  border: 1px solid #959595;
-  border-radius: 6px;
+}
+.features-title {
+  font-size: 2em;
+  color: #3e434a;
+}
+.features-text {
+  margin-top: 2em;
+  font-size: 1.4em;
+  color: #7e848e;
+}
+.features-list {
+  display: flex;
+  margin: 3.3em -0.7em 0 -0.7em;
+}
+.features-list > li {
+  width: 25%;
+  padding: 0.7em;
+}
+.features-card {
+  padding: 1.8em;
+  border: 1px solid #dfe3ea;
+}
+.features-card-title {
+  margin-top: 2em;
+  font-size: 1.2em;
+  color: #42474e;
+}
+.features-card-text {
+  margin-top: 1em;
+  font-size: 0.9em;
+  line-height: 1.7;
+  color: #898f98;
+}
+.features-card-btn {
+  margin-top: 1.7em;
+  padding: 0.8em 1.2em;
+  min-width: 7em;
+  font-size: 0.9em;
+  color: #898f98;
+}
+.features-card-btn:hover, .features-card-btn:focus {
+  background-color: #2095bc;
+  color: #ffffff;
+}
+
+.testimonials {
+  padding: 4.2em 0 2.7em 0;
+  text-align: center;
+}
+.testimonials-title {
+  font-size: 2em;
+  color: #3e434a;
 }/*# sourceMappingURL=style.css.map */
