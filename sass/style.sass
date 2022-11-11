@@ -27,7 +27,16 @@ section:nth-child(even)
     border-bottom: 1px solid #ebedf0
 
 section:nth-child(odd)
+    background-color: #ffffff
     border-bottom: 1px solid #ebedf0
+
+section:first-child
+    background-color: #000000
+    border: none
+
+section:last-child
+    background-color: $accentColor
+    border: none
 
 .header 
     position: absolute
@@ -54,7 +63,6 @@ section:nth-child(odd)
                 color: $accentColor
 
 .hero
-    background-color: #000000
     padding: 
         top: 14em
         bottom: 8.7em
@@ -74,7 +82,7 @@ section:nth-child(odd)
     li + li
         margin-left: 0.7em
     &-btn
-        min-width: 11.7em
+        min-width: 11.7rem
         padding: 1.1em 2em
         font-size: 1.1em
         &:hover, &:focus 
@@ -116,7 +124,8 @@ section:nth-child(odd)
         padding: 0.7em
     &-card
         padding: 1.8em
-        border: 1px solid #dfe3ea
+        border: 1px solid
+        border-image: linear-gradient(#dfe3ea, #ffffff 80%) 1
         &-title
             margin-top: 2em
             font-size: 1.2em
@@ -151,14 +160,23 @@ section:nth-child(odd)
             margin-left: 3.7em
     &-card
         &-text
+            position: relative
             padding: 1.4em
             max-width: 20em
             font-size: 0.9em
             line-height: 1.4
             text-align: left
             border-radius: 6px
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1))
             background-color: #ffffff
+        &-text:before
+            position: absolute
+            top: 100%
+            left: 1.8em
+            content: ""
+            border-style: solid
+            border-color: transparent transparent transparent #ffffff
+            border-width: 0 1.2em 1.2em 1.2em
         &-person
             display: flex
             align-items: center
@@ -200,7 +218,6 @@ section:nth-child(odd)
 .trial
     padding: 5.8em 0 5.3em 0
     text-align: center
-    background-color: $accentColor
     &-title
         font-size: 2.4em
     &-text
@@ -209,7 +226,7 @@ section:nth-child(odd)
         font-weight: 300
         color: #95cde0
     &-btn
-        min-width: 11.7em
+        min-width: 11.7rem
         margin-top: 2em
         padding: 1.1em 2em
         font-size: 1.1em
@@ -218,10 +235,56 @@ section:nth-child(odd)
             background-color: #ffffff
             color: $accentColor
     
-
-
-
-
+.footer
+    padding-top: 3rem
+    background-color: #3e434a
+    font-size: 0.9em
+    color: #a5abb2
+    &-list
+        display: flex
+        justify-content: space-between
+        padding-bottom: 5.7rem
+        & > li:last-child
+            max-width: 20.5rem
+    &-card
+        display: inline-flex
+        flex-direction: column
+        & > &-link
+            margin-top: 1rem
+        &-title + &-link, &-title + &-text
+            margin-top: 2rem
+        &-link
+            &:hover, &:focus 
+                color: $accentColor
+        &-title
+            font-size: 0.9em
+        &-text
+            line-height: 1.6
+        &-form
+            display: flex
+            align-items: center
+            margin-top: 1.3rem
+            &-input
+                min-width: 13.6rem
+                padding: 0.65rem
+                border: none
+                border-radius: 6px
+                font-size: 0.8em
+            &-input::placeholder
+                color: #cbcbcb
+            &-btn
+                margin-left: 0.7rem
+                padding: 0.8rem 1.1rem
+                background-image: linear-gradient(#565c64, #4a4f57)
+                border: none
+                color: #bbc1c8
+                &:hover, &:focus 
+                    background-image: linear-gradient(#4a4f57, #565c64)
+                    color: #ffffff
+    &-copyright
+        padding: 2.2rem 0 2.5rem 0
+        border-top: 1px solid #a5abb2
+        color: #a5abb2
 
 
 
