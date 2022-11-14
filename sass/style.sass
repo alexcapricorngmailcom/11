@@ -50,12 +50,20 @@ section:last-child
     display: flex
     justify-content: space-between
     align-items: center
-    
     &-logo
         font-size: 1.4em
         font-weight: 700
         &:hover, &:focus
             color: $accentColor
+    &-mobile
+        &-btn, &-checkbox 
+            display: none
+        &-btn
+            padding: 0.7em 1em
+        &-btn:hover, &:focus
+            background-color: $accentColor
+        &-checkbox:checked + .nav-list
+            display: inline-flex
     &-list
         display: flex
         li + li
