@@ -411,9 +411,6 @@ section:last-child {
 .footer-card-form-input::-moz-placeholder {
   color: #cbcbcb;
 }
-.footer-card-form-input:-ms-input-placeholder {
-  color: #cbcbcb;
-}
 .footer-card-form-input::placeholder {
   color: #cbcbcb;
 }
